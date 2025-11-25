@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script>
+        // Автоматический редирект с главной на index.html
+        if (window.location.pathname === '/' || 
+            window.location.pathname === '/golifaks.github.io' ||
+            window.location.pathname.endsWith('.github.io')) {
+            window.location.href = '/index.html';
+        }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -42,4 +49,5 @@
         </div>
     </section>
 </body>
+
 </html>
